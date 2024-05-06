@@ -1,0 +1,29 @@
+
+fruits = ["apple", "banana", "cherry", "orange"]
+
+print("Fruits List:", fruits)
+print("First fruit:", fruits[0])
+print("Second fruit:", fruits[1])
+
+fruits.append("grapes")
+print("Fruits List after adding grapes:", fruits)
+
+fruits.remove("banana")
+print("Fruits List after removing banana:", fruits)
+
+coordinates = (10, 20)
+
+print("\nCoordinates Tuple:", coordinates)
+print("X coordinate:", coordinates[0])
+print("Y coordinate:", coordinates[1])
+
+x, y = coordinates
+print("Unpacked X coordinate:", x)
+print("Unpacked Y coordinate:", y)
+
+
+students = [("surya", 25), ("Mahesh", 30), ("karthik", 28)]
+
+print("\nList of Students:")
+for student in students:
+    print(f"Name: {student[0]}, Age: {student[1]}")
