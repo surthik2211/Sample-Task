@@ -1,0 +1,18 @@
+
+num_int = 10
+num_float = 5.5
+
+num_int_from_float = int(num_float)
+
+num_float_from_int = float(num_int)
+
+print("Original Integer Value:", num_int)
+print("Original Float Value:", num_float)
+print("Casting Float to Integer:", num_int_from_float)
+print("Casting Integer to Float:", num_float_from_int)
+
+result_sum = num_int + num_int_from_float
+result_product = num_float * num_float_from_int
+
+print("Sum after casting:", result_sum)
+print("Product after casting:", result_product)
