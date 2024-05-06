@@ -1,0 +1,18 @@
+# Integer variable
+age = 25
+
+# Float variable
+height = 175.5
+
+# String variable
+name = "John Doe"
+
+# Boolean variable
+is_student = True
+
+# Print the variables along with their data types
+print("Name:", name, "\t\tType:", type(name))
+print("Age:", age, "\t\t\tType:", type(age))
+print("Height:", height, "\t\tType:", type(height))
+print("Is Student:", is_student, "\t\tType:", type(is_student))
+
