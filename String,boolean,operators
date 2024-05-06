@@ -1,0 +1,21 @@
+
+name = "Surya"
+greeting = "Hello, " + name + "!"
+is_student = True
+age = 25
+is_adult = age >= 18
+has_degree = True
+is_employed = False
+status_message = f"{name} is a student: {is_student}, Adult: {is_adult}"
+status_message += f", has degree: {has_degree}, employed: {is_employed}"
+
+print(greeting)
+print("Age:", age)
+print(status_message)
+
+if is_student and is_adult:
+    print(f"{name} is an adult student.")
+elif is_student:
+    print(f"{name} is a student but not an adult.")
+else:
+    print(f"{name} is not a student.")
