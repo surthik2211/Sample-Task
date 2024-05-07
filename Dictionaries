@@ -1,0 +1,20 @@
+def calculate_average_grade(grades_dict):
+    total_grades = sum(grades_dict.values())
+    num_grades = len(grades_dict)
+    average_grade = total_grades / num_grades
+    return average_grade
+
+grades = {
+    'surya': 85,
+    'karthik': 90,
+    'Mahesh': 78,
+    'kalaga': 92,
+    'siva': 87
+}
+
+print("Student Grades:")
+for student, grade in grades.items():
+    print(f"{student}: {grade}")
+
+average = calculate_average_grade(grades)
+print("\nAverage Grade:", average)
