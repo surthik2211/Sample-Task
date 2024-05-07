@@ -1,0 +1,14 @@
+def display_books(books_dict):
+    print("Books in the Library:")
+    for book_id, book_info in books_dict.items():
+        print(f"Book ID: {book_id}")
+        for key, value in book_info.items():
+            print(f"{key}: {value}")
+        print()
+books = {
+    1: {'Title': 'Python Programming', 'Author': 'Gautam vasudev menon', 'Year':1111},
+    2: {'Title': 'Data Science Essentials', 'Author': 'Vetrimaran', 'Year': 2222},
+    3: {'Title': 'Machine Learning Basics', 'Author': 'venkat prabu', 'Year':3333}
+}
+
+display_books(books)
