@@ -1,0 +1,18 @@
+import json
+
+data = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York",
+    "email": "johndoe@example.com"
+}
+
+with open("data.json", "w") as json_file:
+    json.dump(data, json_file)
+
+print("JSON data written to 'data.json' file.")
+with open("data.json", "r") as json_file:
+    loaded_data = json.load(json_file)
+
+print("Loaded JSON data:")
+print(loaded_data)
