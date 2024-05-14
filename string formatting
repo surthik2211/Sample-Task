@@ -1,0 +1,8 @@
+name = "Ajith"
+age = 28
+height = 165.5
+
+print(f"My name is {name}, I am {age} years old, and my height is {height} cm.")
+print("My name is {}, I am {} years old, and my height is {} cm.".format(name, age, height))
+
+print("My name is %s, I am %d years old, and my height is %.1f cm." % (name, age, height))
