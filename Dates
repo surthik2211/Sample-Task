@@ -1,0 +1,26 @@
+from datetime import datetime
+
+current_datetime = datetime.now()
+
+print("Current date and time:", current_datetime)
+
+year = current_datetime.year
+month = current_datetime.month
+day = current_datetime.day
+hour = current_datetime.hour
+minute = current_datetime.minute
+second = current_datetime.second
+
+print(f"Year: {year}")
+print(f"Month: {month}")
+print(f"Day: {day}")
+print(f"Hour: {hour}")
+print(f"Minute: {minute}")
+print(f"Second: {second}")
+
+custom_datetime = datetime(2023, 10, 15, 12, 30, 0)
+
+print("Custom date and time:", custom_datetime)
+
+difference = custom_datetime - current_datetime
+print("Difference between custom and current date:", difference)
