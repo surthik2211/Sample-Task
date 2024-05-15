@@ -1,0 +1,9 @@
+def divide_numbers(x, y):
+    try:
+        result = x / y
+        print(f"{x} divided by {y} is {result}")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+divide_numbers(10, 2)  
+divide_numbers(5, 0)  
+divide_numbers("abc", 2) 
