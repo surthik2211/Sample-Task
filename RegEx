@@ -1,0 +1,15 @@
+import re
+
+text = "Hello, my email is ajith.don@example.com and my phone number is 123-456-7890."
+
+email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+phone_pattern = r'\b\d{3}-\d{3}-\d{4}\b'
+
+emails_found = re.findall(email_pattern, text)
+print("Emails found:", emails_found)
+
+phones_found = re.findall(phone_pattern, text)
+print("Phone numbers found:", phones_found)
+
+masked_text = re.sub(phone_pattern, 'XXX-XXX-XXXX', text)
+print("Masked text:", masked_text)
