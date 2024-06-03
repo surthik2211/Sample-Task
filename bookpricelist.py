@@ -7,7 +7,7 @@ with open('bookpricelist.txt', 'w') as file:
     for i in range(1, 26):  # The site has 50 pages
         urlpage = url.format(i)
         response = requests.get(urlpage)
-        if response.status_code == 200:  # Check if the page was fetched successfully
+        if response.status_code == 200:  
             page = response.content
             soup = BeautifulSoup(page, 'html.parser')
             articles = soup.find_all('article', class_='product_pod')
